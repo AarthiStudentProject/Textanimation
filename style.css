@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "josefin Sans", sans-serif;
+    font-weight: bold;
+}
+header{
+    background-image: url("https://i.pinimg.com/originals/7f/c9/14/7fc9147a3d6976e83ae3846d2410fadd.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(64,166,213,0.5);
+}
+.logo{
+    margin-left: 50px;
+    margin-top: 5px;
+}
+.logo img{
+    border-radius: 50%;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.menu a{
+    text-decoration: none;
+    color: darkblue;
+    font-size: 20px;
+}
+a::first-letter{
+    color: purple;
+}
+a:hover{
+    text-decoration: underline;
+}
+section{
+    color: white;
+    text-align: center;
+}
+section h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700 ;
+    color: #fff;
+}
+section p{
+    text-transform: uppercase;
+    font-size: 25px;
+    text-shadow: 2px 2px #565555;
+}
+
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: pink;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+.btnone{
+    background-color: white;
+    color: black;
+}
+.btnone:hover{
+    background-color: #00b894;
+    color: white;
+    text-decoration: underline;
+}
+.btntwo{
+    background-color:#00b894;
+    color: white;
+}
+.btntwo:hover{
+    background-color: white;
+    color:black;
+}
+.change_content::after{
+    animation:changetext 10s linear infinite;
+    content: "";
+    text-transform: uppercase;
+    color: #00b894;
+}
+@keyframes changetext {
+    0%{
+        content:"Thanjavur";
+    }
+    20%{
+        content:"Madurai";
+    }
+    35%{
+        content:"Chennai";
+    }
+    60%{
+        content:"Trichy";
+    }
+    80%{
+        content:"Bengaluru";
+    }
+    100%{
+        content:"selam";
+    }
+        
+}
